@@ -10,6 +10,13 @@
 
 n = int(input())
 
+# petya + serega
+#    x  +   x
+# katya
+# (x + x) * 2 = 4x
+# petya + serega + katya
+#   x   +   x    +  4x = 6x = n
+
 petya = n // 6 
 katya = (n // 6) * 4
 serega = n // 6
