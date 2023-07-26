@@ -15,15 +15,15 @@
 
 from random import randint
 
-countBerry = list(randint(1, 15) # рандомное количество ягод на конкретном кусте
+count_berry = list(randint(1, 15) # рандомное количество ягод на конкретном кусте
 for i in range(int(input('Введите кол-во кустов: '))))
-print('Количество ягод на каждом кусте', countBerry)
-numberBush = int(input('Введите номер куста: '))
+print('Количество ягод на каждом кусте', count_berry)
+number_bush = int(input('Введите номер куста: '))
 result = 0
-if numberBush == 1:
-    result = countBerry[0] + countBerry[1] + countBerry[-1]
-elif numberBush == len(countBerry):
-    result = countBerry[-2] + countBerry[-1] + countBerry[0]
+if number_bush == 1:
+    result = count_berry[0] + count_berry[1] + count_berry[-1]
+elif number_bush == len(count_berry):
+    result = count_berry[-2] + count_berry[-1] + count_berry[0]
 else:
-    result = countBerry[numberBush-1] + countBerry[numberBush-2] + countBerry[numberBush]
+    result = count_berry[number_bush-1] + count_berry[number_bush-2] + count_berry[number_bush]
 print(result, 'ягод')
